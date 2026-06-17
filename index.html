@@ -3,40 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JSON API Explorer</title>
+  <title>Quiz App</title>
 </head>
 <body>
-  <h1>JSON API Explorer</h1>
+  <h1>Quiz App</h1>
 
-  <section>
-    <h2>Create New Post</h2>
+  <h2 id="question"></h2>
 
-    <form id="postForm">
-      <div>
-        <label for="titleInput">Title:</label>
-        <input type="text" id="titleInput" name="title" required>
-      </div>
+  <div id="answers">
+    <button id="answer1"></button>
+    <button id="answer2"></button>
+    <button id="answer3"></button>
+    <button id="answer4"></button>
+  </div>
 
-      <div>
-        <label for="bodyInput">Body:</label>
-        <textarea id="bodyInput" name="body" rows="4" required></textarea>
-      </div>
+  <p id="feedback"></p>
 
-      <button type="submit">Submit Post</button>
-    </form>
+  <button id="nextBtn">Next Question</button>
 
-    <p id="formError"></p>
-    <p id="formSuccess"></p>
-  </section>
-
-  <section>
-    <h2>Posts</h2>
-    <button id="fetchButton">Fetch Posts</button>
-    <p id="loading"></p>
-    <p id="error"></p>
-    <div id="postList"></div>
-  </section>
-
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
